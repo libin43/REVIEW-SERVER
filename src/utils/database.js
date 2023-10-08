@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
+import config from "../config/config.js";
 
 mongoose.set('strictQuery',true);
-const dbUrl = 'mongodb://localhost:27017/reviewstore'; 
+const dbUrl = config.mongo.uri; 
 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,

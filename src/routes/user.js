@@ -1,10 +1,10 @@
 import express from 'express'
 import userController from '../controllers/user.js'
 const userRouter = express.Router()
-const {createNewBook} = userController
-console.log('called in rote');
+const {createNewReview} = userController
 
-userRouter.post('/addBook', createNewBook)
-userRouter.get('/viewbook')
+
+userRouter.post('/review_submit', createNewReview)
+// userRouter.get('/viewbook')
 
 export default userRouter;
