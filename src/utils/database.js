@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 mongoose.set('strictQuery',true);
-const dbUrl = 'mongodb://localhost:27017/bookstore'; 
+const dbUrl = 'mongodb://localhost:27017/reviewstore'; 
 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
