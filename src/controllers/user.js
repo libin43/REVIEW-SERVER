@@ -26,16 +26,6 @@ const userController = {
         }
     },
 
-    // viewBooks: async (req, res)=>{
-    //     try{
-    //         const allBooks = await bookmodel.find()
-    //         console.log(allBooks);
-    //     }
-    //     catch(error){
-    //         console.log(error)
-    //         res.status(500).json({ message: "something went wrong" })
-    //     }
-    // }
 }
 
 export default userController

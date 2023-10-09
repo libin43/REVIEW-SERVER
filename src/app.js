@@ -1,6 +1,4 @@
 import express from 'express'
-import cors from 'cors'
-import mongoose from './utils/database.js';
 import morgan from 'morgan';
 import config from './config/config.js';
 import userRouter from './routes/user.js';
@@ -23,11 +21,6 @@ app.use((req, res, next) => {
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(morgan('dev'))
-
-// app.use(express.static( 'public'));
-// const userRoutes = require('./routes/user');
-// const adminRoutes = require('./routes/admin');
-console.log(' server');
 
 //routes
 app.use('/api/v1/user',userRouter);

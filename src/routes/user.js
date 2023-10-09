@@ -9,6 +9,5 @@ const {
 
 userRouter.post('/review_submit', createNewReview)
 userRouter.get('/review_result', viewReviewResults)
-// userRouter.get('/viewbook')
 
 export default userRouter;
